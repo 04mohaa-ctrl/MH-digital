@@ -30,6 +30,8 @@
 ---
 
 ## Table of contents
+- [MH Digital](#mh-digital)
+- [Project Documentation System](#project-documentation-system)
 - [Built with this workflow](#built-with-this-workflow)
 - [Workflow overview](#workflow-overview)
 - [Quick start and the 5 steps](#quick-start-and-the-5-steps)
@@ -38,6 +40,43 @@
 - [Project structure and deployment](#project-structure-and-deployment)
 - [Common pitfalls and troubleshooting](#common-pitfalls-and-troubleshooting)
 - [Further reading](#further-reading)
+
+---
+
+## MH Digital
+
+**MH Digital** is a Swedish web agency MVP that builds modern, premium websites for local businesses (restaurants, cafés, salons, and more).
+
+| | |
+| :-- | :-- |
+| **Live dev** | `npm run dev` → [http://localhost:3000](http://localhost:3000) |
+| **Stack** | Next.js 16, TypeScript, Tailwind, Vercel, Resend |
+| **PRD** | [`docs/PRD-MH Digital-MVP.md`](docs/PRD-MH%20Digital-MVP.md) |
+| **Tech Design** | [`docs/TechDesign-MH Digital-MVP.md`](docs/TechDesign-MH%20Digital-MVP.md) |
+| **Agent plan** | [`AGENTS.md`](AGENTS.md) |
+
+---
+
+## Project Documentation System
+
+This project uses documentation files to preserve context for AI-assisted development.
+
+Important files:
+
+- `MEMORY.md` — Long-term project memory and current context.
+- `docs/CHANGELOG.md` — Meaningful implementation changes.
+- `docs/PROMPT_LOG.md` — Important prompts given to AI tools.
+- `docs/DECISIONS.md` — Product, technical, design and business decisions.
+- `docs/TODO.md` — Upcoming tasks and priorities.
+- `AGENTS.md` — Instructions for AI agents working on the project.
+
+Rules:
+
+- Update `MEMORY.md` after major milestones, structural changes or resolved bugs.
+- Log important prompts in `docs/PROMPT_LOG.md`.
+- Log meaningful changes in `docs/CHANGELOG.md`.
+- Log important decisions in `docs/DECISIONS.md`.
+- Keep `docs/TODO.md` updated as work progresses.
 
 ---
 

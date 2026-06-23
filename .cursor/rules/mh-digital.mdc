@@ -1,0 +1,39 @@
+---
+description: MH Digital project directives — read AGENTS.md first, then agent_docs/ for details
+alwaysApply: true
+---
+
+# Cursor Rules for MH Digital
+
+## Project Context
+**App:** MH Digital
+**Stack:** Next.js + TypeScript + Tailwind CSS + shadcn/ui + Framer Motion + Resend + Vercel
+**Stage:** MVP Development — Phase 1 (Foundation)
+**User Level:** In-between (learning while building with AI assistance)
+
+## Directives
+1. **Master Plan:** Always read `AGENTS.md` first. It contains the current phase and tasks.
+2. **Documentation:** Refer to `agent_docs/` for tech stack details, code patterns, and testing guides.
+3. **Memory:** Check and update `MEMORY.md` after major milestones.
+4. **Plan-First:** Propose a brief plan and wait for approval before coding.
+5. **Incremental Build:** Build one small feature at a time. Test frequently.
+6. **Pre-Commit:** Run `npm run lint` and `npx tsc --noEmit` before commits; fix failures.
+7. **No Linting Role:** Do not act as a linter manually — use `npm run lint`.
+8. **Communication:** Be concise. Ask ONE specific clarifying question when needed.
+9. **Reusability:** One component with props beats industry-specific duplicates.
+10. **Browser Verify:** Require browser-based verification before marking frontend tasks complete.
+
+## Commands
+- `npm run dev` — Start development server
+- `npm run build` — Production build
+- `npm run lint` — Check code style
+- `npx tsc --noEmit` — TypeScript type check
+
+## What NOT To Do
+- Do NOT delete files without explicit confirmation
+- Do NOT modify database schemas without backup plan
+- Do NOT add features not in the current phase
+- Do NOT skip verification for "simple" changes
+- Do NOT bypass failing linters or pre-commit hooks
+- Do NOT use `any` type — use `unknown` with type guards
+- Do NOT add placeholder content to production pages
